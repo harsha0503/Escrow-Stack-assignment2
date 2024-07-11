@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Accounts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <label for="company">Select Company:</label>
+        <select id="company" onchange="updateAccounts()">
+            <option value="company1">Company 1</option>
+            <option value="company2">Company 2</option>
+        </select>
+
+        <label for="account">Select Account:</label>
+        <select id="account" onchange="updateTable()">
+            <!-- Accounts will be populated based on the selected company -->
+        </select>
+
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated based on the selected account -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
